@@ -1,6 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+
+/**
+ * 这是一个连连看小游戏
+ * 修改内容：修改了主面板
+ */
 public class LianLianKan implements ActionListener
 {
     JFrame mainFrame; //主面板
@@ -15,7 +20,7 @@ public class LianLianKan implements ActionListener
     int x0=0,y0=0,x=0,y=0,fristMsg=0,secondMsg=0,validateLV; //游戏按钮的位置坐标
     int i,j,k,n;//消除方法控制
     public void init(){
-        mainFrame=new JFrame("JKJ连连看");
+        mainFrame=new JFrame("YZH连连看");
         thisContainer = mainFrame.getContentPane();
         thisContainer.setLayout(new BorderLayout());
         centerPanel=new JPanel();
@@ -43,7 +48,7 @@ public class LianLianKan implements ActionListener
         southPanel.add(newlyButton);
         fractionLable.setText(String.valueOf(Integer.parseInt(fractionLable.getText())));
         northPanel.add(fractionLable);
-        mainFrame.setBounds(280,100,500,450);
+        mainFrame.setBounds(280,200,500,500);
         mainFrame.setVisible(true);
     }
     public void randomBuild() {
