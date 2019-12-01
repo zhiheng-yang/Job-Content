@@ -120,6 +120,7 @@ public class LianLianKan implements ActionListener
             }
         }
     }
+    
     public void xiao() { //相同的情况下能不能消去。
         if((x0==x &&(y0==y+1||y0==y-1)) || ((x0==x+1||x0==x-1)&&(y0==y))){ //判断是否相邻
             remove();
